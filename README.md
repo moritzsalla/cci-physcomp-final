@@ -1,2 +1,2 @@
-# cci-physcomp-final
-Blog for my final project 🤖
+# CCi Physcomp Final Blog
+This is a blog for my final project 🤖
