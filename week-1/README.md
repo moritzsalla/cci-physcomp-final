@@ -1,5 +1,8 @@
 # Week 1
 
+1. Brainstorm
+2. Project Proposal
+
 ## Brainstorm
 
 Brainstorm leading up to the idea. Trying to plan it through as much as I can before ordering the components. This'll be an expensive project. I hope we'll have access to the workshops at Camberwell—a good enclosure is essential for good interaction.
