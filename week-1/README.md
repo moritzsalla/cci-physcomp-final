@@ -1,7 +1,7 @@
 # Week 1
 
-1. Brainstorm
-2. Project Proposal
+1. Brainstorm and research
+2. Project proposal
 
 ## Brainstorm
 
