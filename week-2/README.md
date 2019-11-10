@@ -22,6 +22,6 @@ The ambient light sensors have arrived and I am testing them out. They work! The
 ![Image](image-007.jpeg)
 ![Image](image-008.jpeg)
 
-Bought my own Board, a Sunfounder Mega. It accommodates 16 analog ins, whereas the leonardo only has 6. Since I need 12 and multiplexing is not an option, this is the optimal board.
+Bought my own Board, a Sunfounder Mega (SUNFOUNDER Mega 2560 R3). It accommodates 16 analog ins, whereas the leonardo only has 6. Since I need 12 and multiplexing is not an option, this is the optimal board.
 
 ![Image](image-009.jpeg)
