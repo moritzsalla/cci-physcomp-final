@@ -1,5 +1,9 @@
 # Week 2
 
+I've ordered 4 ambient light sensors. Initially, I wanted to go for 5 sensors of each sort but since spending such an amount of money didn't increase the accuracy much, I cut it down to four. 
+
+In the meantime, I started soldering little breakout boards for the photoresistors. Not only will this reduce the cable salad on my central perfboard by compartmentalizing the components, but it'll also be more reliable. 
+
 ![Image](image-001.jpeg)
 ![Image](image-002.jpeg)
 ![Image](image-003.jpeg)
