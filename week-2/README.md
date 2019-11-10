@@ -5,6 +5,9 @@ I've ordered 4 ambient light sensors. Initially, I wanted to go for 5 sensors of
 In the meantime, I started soldering little breakout boards for the photoresistors. Not only will this reduce the cable salad on my central perfboard by compartmentalizing the components, but it'll also be more reliable. 
 
 ![Image](image-001.jpeg)
+
+Taping the cables together close to the breakout board will helpfully spread force to all of the cables should they be accidentally pulled. This'll hopefully reduce the chance of a cable getting lose. Since I'm dealing with so many sensors at once, it'll be a nightmare to spot errors if things go wrong. Better be safe then sorry.
+
 ![Image](image-002.jpeg)
 ![Image](image-003.jpeg)
 ![Image](image-004.jpeg)
