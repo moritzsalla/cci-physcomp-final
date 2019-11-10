@@ -15,7 +15,7 @@ For now I am using this styrophome ball to prototype. I poke holes into the ball
 ![Image](image-003.jpeg)
 ![Image](image-004.jpeg)
 
-The ambient light sensors have arrived and I am testing them out. They work! The output is in HEX color values—I hope Arduino provides an easy way to convert these to floating-point.
+The ambient light sensors (ISL29125 RGB Light Sensor [SEN-12829]) have arrived and I am testing them out. They work! The output is in HEX color values—I hope Arduino provides an easy way to convert these to floating-point.
 
 ![Image](image-005.jpeg)
 ![Image](image-006.jpeg)
