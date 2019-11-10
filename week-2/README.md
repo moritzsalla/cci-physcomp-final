@@ -22,6 +22,6 @@ The ambient light sensors (ISL29125 RGB Light Sensor [SEN-12829]) have arrived a
 ![Image](image-007.jpeg)
 ![Image](image-008.jpeg)
 
-Bought my own Board, a Sunfounder Mega (SUNFOUNDER Mega 2560 R3). It accommodates 16 analog ins, whereas the leonardo only has 6. Since I need 12 and multiplexing is not an option, this is the optimal board. I was thinking of using two Arduinos but setting up a serial connection between them and packing all of that wire jungle into relatively compact space convinced me to just spend the money in order to greatly simplify life. This would have been a cool multiplexer though: https://hackaday.com/2018/06/09/arduino-analog-i-o-multiplexer/
+Bought my own Board, a Sunfounder Mega (SUNFOUNDER Mega 2560 R3). It accommodates 16 analog ins, whereas the leonardo only has 6. Since I need 12 and multiplexing is not an option, this is the optimal board. I was thinking of using two Arduinos but setting up a serial connection between them and packing all of that wire jungle into relatively compact space convinced me to just spend the money in order to greatly simplify life.
 
 ![Image](image-009.jpeg)
