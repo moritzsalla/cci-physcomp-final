@@ -11,6 +11,9 @@ Taping the cables together close to the breakout board will helpfully spread for
 ![Image](image-002.jpeg)
 ![Image](image-003.jpeg)
 ![Image](image-004.jpeg)
+
+The ambient light sensors have arrived and I am testing them out. They work! The output is in HEX color values—I hope Arduino provides an easy way to convert these to floating-point.
+
 ![Image](image-005.jpeg)
 ![Image](image-006.jpeg)
 ![Image](image-007.jpeg)
