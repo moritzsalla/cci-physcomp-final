@@ -2,8 +2,8 @@
  
  ### Dealing with color values
  
- DEC = decimal
- HEX = hex color values
+ - DEC = decimal
+ - HEX = hex color values
  
  ![Image](screenshot-1.png)
  ![Image](screenshot-2.png)
