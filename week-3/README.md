@@ -72,3 +72,13 @@ I keep ground in the center lane. The 3.5V is on the left, the 5V on the right l
 All the sensors seem to be getting their electricity. Tested both lanes with 3.5V from the Arduino. I get 3.322V on both of them, is this their combined resistance? Checked the current straight from the Aruduino which is 3.341V. Where is the 0.178V being lost?
 
 ![Image](image-4.jpg)
+
+### Bi-Directional Logic Level Converter
+
+Even though I can power the sensors with 3.5V, it appears like I need a logic level converter between the SDA/SCL and serial pins on the Arduino.
+
+>"Connect SDA on the breakout to A4 on the Uno, SCL to A5 on the Uno. If you're using the Uno or any 5V Arduino, you'll need a logic level converter between SDA/SCL on the breakout and A4/A5 on the Uno."
+
+I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the hopes of being able to connect all my sensors to it at once.
+
+Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
