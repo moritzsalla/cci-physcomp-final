@@ -79,8 +79,6 @@ Even though I can power the sensors with 3.5V, it appears like I need a logic le
 
 >"Connect SDA on the breakout to A4 on the Uno, SCL to A5 on the Uno. If you're using the Uno or any 5V Arduino, you'll need a logic level converter between SDA/SCL on the breakout and A4/A5 on the Uno."
 
-I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the hopes of being able to connect all my sensors to it at once.
-
-Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
+I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the hopes of being able to connect all my sensors to it at once. Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
 
 Apparently multiple sensors can be combined into one data stream. However, every sensor needs to be individually adressed. 
