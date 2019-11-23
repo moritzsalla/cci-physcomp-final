@@ -6,6 +6,6 @@ I have ordered a shperical cake form that will act as a mold for the outer skin 
 
 ![Image](image-2.jpg)
 
-I will create small globe torches in similar fashion. These are the molds I have ordered:
+I will create small globe torches in similar fashion. These are the molds I have ordered. Their internals will be simple—an array of LEDs connected to the arduino by distance. This'll allow programming light sequences, fading, and potential interaction.
 
 ![Image](image-1.jpg)
