@@ -81,4 +81,4 @@ Even though I can power the sensors with 3.5V, it appears like I need a logic le
 
 I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the hopes of being able to connect all my sensors to it at once. Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
 
-Apparently multiple sensors can be combined into one data stream. However, every sensor needs to be individually adressed. 
+Apparently multiple sensors can be combined into one data stream. However, every sensor needs to be individually adressed. Lucky me, the mega might have sufficient TX/RX pins, whereas the Uno only has one pair.
