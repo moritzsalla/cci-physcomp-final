@@ -12,6 +12,8 @@ I will create small globe torches in similar fashion. These are the molds I have
 
 ### Testing all the sensors at once
 
+Before speration:
+
 ![Image](screenshot-0.png)
 
 
@@ -37,4 +39,10 @@ void loop() {
 }
 ```
 
+Using 3.5V:
+
 ![Image](screenshot-1.png)
+
+Using 5V:
+
+![Image](screenshot-2.png)
