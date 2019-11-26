@@ -34,4 +34,4 @@ void loop() {
 }
 ```
 
-![Image](screenshot-1.jpg)
+![Image](screenshot-1.png)
