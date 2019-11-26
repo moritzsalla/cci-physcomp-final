@@ -16,7 +16,7 @@ I will create small globe torches in similar fashion. These are the molds I have
 float brightness = 0;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -30,5 +30,8 @@ void loop() {
   Serial.print(analogRead(A2));
   Serial.print(",");
   Serial.print(analogRead(A3));
+  Serial.println(",");
 }
 ```
+
+![Image](screenshot-1.jpg)
