@@ -12,7 +12,7 @@ I will create small globe torches in similar fashion. These are the molds I have
 
 ### Testing all the sensors at once
 
-``c++
+```c++
 float brightness = 0;
 
 void setup() {
@@ -30,4 +30,4 @@ void loop() {
   Serial.print(analogRead(A2));
   Serial.print(",");
   Serial.print(analogRead(A3));
-}``
+}```
