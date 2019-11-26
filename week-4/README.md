@@ -9,3 +9,25 @@ I have ordered a shperical cake form that will act as a mold for the outer skin 
 I will create small globe torches in similar fashion. These are the molds I have ordered. Their internals will be simple—an array of LEDs connected to the arduino by distance. This'll allow programming light sequences, fading, and potential interaction.
 
 ![Image](image-1.jpg)
+
+### Testing all the sensors at once
+
+``c++
+float brightness = 0;
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  // brightness = analogRead(A0);
+  // brightness = map(brightness, 599, 880, 0, 255);
+
+  Serial.print(analogRead(A0));
+  Serial.print(",");
+  Serial.print(analogRead(A1));
+  Serial.print(",");
+  Serial.print(analogRead(A2));
+  Serial.print(",");
+  Serial.print(analogRead(A3));
+}``
