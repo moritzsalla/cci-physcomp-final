@@ -10,6 +10,12 @@ I will create small globe torches in similar fashion. These are the molds I have
 
 ![Image](image-1.jpg)
 
+### Resoldering
+
+My compartmentalized approach made me run out of space. I've resoldered everything to a single, large perf board.
+
+![Image](image-3.jpg)
+
 ### Testing all the sensors at once
 
 Before speration:
