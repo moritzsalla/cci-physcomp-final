@@ -49,6 +49,6 @@ Using 3.5V:
 
 ![Image](screenshot-1.png)
 
-The mega can take a __max. stable baud rate of 115200__. This runs quicker but will choke the monitor/plotter when there is a mistake in the code. Using 5V. It's rather satisfying to watch this:
+The mega can take a __max. stable baud rate of 115200__. This runs quicker but will choke the monitor/plotter when there is a mistake in the code. Using 5V will yield a much cleaner out. It's rather satisfying to watch this:
 
 ![Image](screenshot-2.png)
