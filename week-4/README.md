@@ -52,11 +52,24 @@ The mega can take a **max. stable baud rate of 115200**. This runs quicker but w
 
 ![Image](screenshot-2.png)
 
-## To–do
+## Update
+
+### Wiring
 
 - [ ] 4th photoresistor isn't working. Find out why.
 - [ ] Set ISLs to different addresses so that they can be individually read out.
 - [ ] Find out why speaker_start() miraculously isn't in scope, altough other files are.
 - [ ] Find out how to play 2 speakers at same time
 
-<https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/> <https://maker.pro/arduino/projects/arduino-speaker> <https://forum.arduino.cc/index.php?topic=77447.0><https://www.programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/>
+### Encasing
+
+- [ ] Find better, more transparent and less colored material than the silicone from art supply shop
+- [ ] Wait for christmas bobles to arrive (torches)
+- [ ] Pour torches
+
+### Programming
+
+- [ x ] Get all sensors to work
+- [ ] Troubleshoot minor problems
+
+<https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/> <https://maker.pro/arduino/projects/arduino-speaker> <https://forum.arduino.cc/index.php?topic=77447.0><https://www.programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/> x
