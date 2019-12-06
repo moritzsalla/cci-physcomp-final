@@ -54,6 +54,7 @@ The mega can take a __max. stable baud rate of 115200__. This runs quicker but w
 ![Image](screenshot-2.png)
 
 ### To–do
-1. 4th photoresistor isn't working. Find out why.
-2. Set ISLs to different addresses so that they can be individually read out.
-3. Find out why speaker_start() miraculously isn't in scope, altough other files are.
+- [ ] 4th photoresistor isn't working. Find out why.
+- [ ] Set ISLs to different addresses so that they can be individually read out.
+- [ ] Find out why speaker_start() miraculously isn't in scope, altough other files are.
+- [ ] Find out how to play 2 speakers at same time
