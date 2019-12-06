@@ -65,11 +65,11 @@ The mega can take a **max. stable baud rate of 115200**. This runs quicker but w
 
 - [ ] Find better, more transparent and less colored material than the silicone from art supply shop
 - [ ] Wait for christmas bobles to arrive (torches)
-- [ ] Pour torches
+- [ ] Pour torches using moldes
 
 ### Programming
 
-- [ x ] Get all sensors to work
+- [x] Get all sensors to work
 - [ ] Troubleshoot minor problems
 
 <https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/> <https://maker.pro/arduino/projects/arduino-speaker> <https://forum.arduino.cc/index.php?topic=77447.0><https://www.programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/> x
