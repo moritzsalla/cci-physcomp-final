@@ -16,6 +16,8 @@ void torch_setup () {
   pinMode(led5, OUTPUT);
   pinMode(led6, OUTPUT);
   pinMode(led7, OUTPUT);
+
+  Serial.println("Torch setup complete");
 }
 
 void torch_start () {
@@ -38,4 +40,6 @@ void torch_stop () {
   digitalWrite(led5, LOW);
   digitalWrite(led6, LOW);
   digitalWrite(led7, LOW);
+
+  Serial.println("Stopping torches");
 }
