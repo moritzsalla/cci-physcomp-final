@@ -52,9 +52,3 @@ Using 3.5V:
 The mega can take a __max. stable baud rate of 115200__. This runs quicker but will choke the monitor/plotter when there is a mistake in the code. Using 5V will yield a much cleaner out. It's rather satisfying to watch this:
 
 ![Image](screenshot-2.png)
-
-### To–do
-
-1. 4th photoresistor isn't working. Find out why.
-2. Set ISLs to different addresses so that they can be individually read out.
-3. Find out why speaker_start() miraculously isn't in scope, altough other files are.
