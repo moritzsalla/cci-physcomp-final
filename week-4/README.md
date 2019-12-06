@@ -59,4 +59,4 @@ The mega can take a **max. stable baud rate of 115200**. This runs quicker but w
 - [ ] Find out why speaker_start() miraculously isn't in scope, altough other files are.
 - [ ] Find out how to play 2 speakers at same time
 
-<https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/>
+<https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/> <https://maker.pro/arduino/projects/arduino-speaker> <https://forum.arduino.cc/index.php?topic=77447.0><https://www.programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/>
