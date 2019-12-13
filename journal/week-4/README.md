@@ -58,13 +58,13 @@ The mega can take a **max. stable baud rate of 115200**. This runs quicker but w
 
 - [ ] 4th photoresistor isn't working. Find out why.
 - [ ] Set ISLs to different addresses so that they can be individually read out.
-- [ ] Find out why speaker_start() miraculously isn't in scope, altough other files are.
+- [x] Find out why speaker_start() miraculously isn't in scope, altough other files are.
 - [ ] Find out how to play 2 speakers at same time
 
 ### Encasing
 
 - [ ] Find better, more transparent and less colored material than the silicone from art supply shop
-- [ ] Wait for christmas bobles to arrive (torches)
+- [x] Wait for christmas bobles to arrive (torches)
 - [ ] Pour torches using moldes
 
 ### Programming
