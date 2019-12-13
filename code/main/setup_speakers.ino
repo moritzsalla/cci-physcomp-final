@@ -57,14 +57,12 @@ int noteDurations[] = {       //duration of the notes
 };
 
 int speed = 90; //higher value, slower notes
-int piezo0 = 5;
-int piezo1 = 4;
 
-void speakers_play {
+void speakers_play() {
   for (int thisNote = 0; melody[thisNote] != -1; thisNote++) {
     int noteDuration = speed * noteDurations[thisNote];
     tone(3, melody[thisNote], noteDuration * .95);
-    Serial.println(melody[thisNote]);
+    // Serial.println(melody[thisNote]);
     delay(noteDuration);
     noTone(3);
   }
