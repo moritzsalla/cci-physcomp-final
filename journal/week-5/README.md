@@ -1,6 +1,22 @@
 # Week 5
 
-### Pulse Width Modulation (PWM)
+![Image](image-11.jpeg)
+
+### Loudspeakers
+
+The loudspeakers have arrived and are working like a charm. I have found an open source tone library that simplifies the creation of melodies. Since they came with a wobbly cable and some sort of female plug I stripped them and resoldered the connection.
+
+https://youtu.be/ip19ULygueg
+
+![Image](image-02.jpeg)
+
+### LED
+
+LED strips, soldered in parallel. These can be individually accessed through the megs PWM pins.
+
+![Image](image-01.jpeg)
+
+#### Pulse Width Modulation (PWM)
 
 ```C++
 void loop () {
@@ -17,3 +33,30 @@ void loop () {
   }
 }
 ```
+
+### Casing
+
+I've bought silicone to cast a membrane that will act as my casing. It should be semi-translucent and ideally colorless. It's purpose is to hide the wiring, hence making it more approachable for the audience. I want to create a mistery around my piece, and give it a uncanny flesh like texture. The LED torches will be cast from the same material. PS3 had these neat accessory controllers, this would be ideal.
+
+Some inspiration I found in a shop in china town:
+
+![Image](image-08.jpeg)
+
+Getting my hands dirty:
+
+![Image](image-03.jpeg)
+![Image](image-04.jpeg)
+
+Half an hour into drying time the silicone appeared competely opaque with little color tint.
+
+![Image](image-05.jpeg)
+
+A day after the casting the silicone turned semitransparent, albeit having taken on a very distinct color. This will skew sensor readings. The texture is perfect though. I'll need to find a similar, colorless material.
+
+![Image](image-06.jpeg)
+![Image](image-07.jpeg)
+![Image](image-09.jpeg)
+
+### Final Interior
+
+![Image](image-10.jpeg)
