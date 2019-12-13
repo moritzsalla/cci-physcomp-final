@@ -29,7 +29,7 @@ This made me wonder if light can be used as an interface, for example, to create
 
 ### Mockup
 
-Quick mockups of my vision that demonstrate how light/shadow can be used as an interface. The surface contains an array of sensors, and the amount of area that is lit/unlit will trigger an output.
+Quick mockups of how this interaction could take place. An array of sensors is spread across the surface and the amount of area that is lit/unlit will trigger an output.
 
-![Image](../render-1.jpg)
-![Image](../render-2.jpg)
+![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-1.jpg)
+![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-2.jpg)
