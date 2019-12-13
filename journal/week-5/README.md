@@ -4,7 +4,7 @@
 
 ### Loudspeakers
 
-The loudspeakers have arrived and are working like a charm. I have found an open source tone library that simplifies the creation of melodies. Since they came with a wobbly cable and some sort of female plug I stripped them and resoldered the connection.
+The loudspeakers have arrived and are working like a charm. I have found an open source tone library that simplifies the creation of melodies. Since they came with a wobbly cable and some sort of female plug I stripped them and resoldered the connection. Using hot glue, I will glue them to the inside of the dome, projecting downwards. This will disperse the sound more evenly compared to just chucking them in loosely with all the other components (the underground surface disperses the sound waves). Also, this saves space.
 
 https://youtu.be/ip19ULygueg
 
@@ -62,5 +62,7 @@ A day after the casting the silicone turned semitransparent, albeit having taken
 ![Image](image-09.jpeg)
 
 ### Final Interior
+
+The interior is finalized. All components fit into the inside and are functional. A battery will power the arduino. I ahve cut an opening into the dome for the cables to exit. These will conenct the LED torches to the main perfboard. The loudspeakers are glued to the inside of the dome using hot glue and are projecting downwards.
 
 ![Image](image-10.jpeg)
