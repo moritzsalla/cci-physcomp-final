@@ -58,5 +58,8 @@ void loop() {
   int photo2input = analogRead(photo2pin);
   int photo3input = analogRead(photo3pin);
 
-  
+  Serial.println(photo0input);
+  Serial.println(photo1input);
+  Serial.println(photo2input);
+  Serial.println(photo3input);
 }
