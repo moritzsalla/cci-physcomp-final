@@ -31,5 +31,5 @@ This made me wonder if light can be used as an interface, for example, to create
 
 Quick mockups of my vision that demonstrate how light/shadow can be used as an interface. The surface contains an array of sensors, and the amount of area that is lit/unlit will trigger an output.
 
-![Image](img-1.jpg)
-![Image](img-2.jpg)
+![Image](../render-1.jpg)
+![Image](../render-2.jpg)
