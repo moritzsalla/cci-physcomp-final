@@ -19,5 +19,5 @@ Violet & White = SCL & SDA (ISL)
 - [ ] Readings are normalized
 - [ ] Both speakers output tone
 - [ ] Speakers output normalized value
-- [ ] Intensity readings will change frequency
-- [ ] Color readings will change delay
+- [ ] Intensity readings change frequency
+- [ ] Color readings change delay
