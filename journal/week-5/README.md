@@ -40,7 +40,9 @@ void loop () {
 
 ### Casing
 
-I've bought silicone to cast a membrane that will act as my casing. It should be semi-translucent and ideally colorless. It's purpose is to hide the wiring, hence making it more approachable for the audience. I want to create a mistery around my piece, and give it a uncanny flesh like texture. The LED torches will be cast from the same material. PS3 had these neat accessory controllers, this would be ideal.
+I've bought silicone to cast a membrane that will act as my casing. It should be semi-translucent and ideally colorless. It's purpose is to hide the wiring, hence making it more approachable for the audience. I want to create a mistery around my piece, and give it a uncanny flesh like texture. The LED torches will be cast from the same material. PS3 had these neat accessory controllers (Sony PlayStation 4 Move controller set), this would be ideal:
+
+![Image](image-12.jpeg)
 
 Some inspiration I found in a shop in china town:
 
