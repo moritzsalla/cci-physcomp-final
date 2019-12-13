@@ -12,7 +12,9 @@ https://youtu.be/ip19ULygueg
 
 ### LED
 
-LED strips, soldered in parallel. These can be individually accessed through the megs PWM pins.
+LED strips, soldered in parallel. These can be individually accessed through the megs PWM pins. When I tested this in the classroom I was quite amazed by how well the sensors were picking up the brightness. It was probably the shadow of my hand which triggered this, however.
+
+https://youtu.be/PpH0G7DInRk
 
 ![Image](image-01.jpeg)
 
