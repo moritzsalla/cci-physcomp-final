@@ -1,6 +1,6 @@
 /*******************************
 LIGHT, Moritz Salla
-CCi Phsycomp 2019 MSc
+CCi MSc Phsycomp 2019
 --------------------
 Experiemental interface that uses light as
 an interface to output tones & melodies.
@@ -13,7 +13,6 @@ Red = 5V
 White = A0–A3 (photoresistors)
 Hardwired Red = 4,5,6–13 (speakers & LEDs)
 Violet & White = SCL & SDA (ISL)
---------------------
 *******************************/
 
 void setup() {
