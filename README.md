@@ -2,3 +2,5 @@
 
 Phoenix Perry<br>
 UAL Creative Computing Institute
+
+![Image](schematic.jpg)
