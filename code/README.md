@@ -5,6 +5,8 @@ CCi Msc Physcomp 2019__
 
 Experiemental interface that uses light as an interface to output tones & melodies. It can be played by a single player or as a dialog between two players.
 
+![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-3.jpg)
+
 Orange = 3.5V  
 Black = GND  
 Red = 5V  
