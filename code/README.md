@@ -1,4 +1,4 @@
-### Light
+# Light
 
 __Moritz Salla  
 CCi Msc Physcomp 2019__
@@ -12,11 +12,12 @@ White = A0–A3 (photoresistors)
 Hardwired Red = 4,5,6–13 (speakers & LEDs)  
 Violet & White = SCL & SDA (ISL)
 
+### To–Do
+
 - [ ] Lights change color and luminance in set pattern
 - [ ] All sensors pick up reliable readings
 - [ ] Readings are normalized
 - [ ] Both speakers output tone
 - [ ] Speakers output normalized value
-
 - [ ] Intensity readings will change frequency
 - [ ] Color readings will change delay
