@@ -1,5 +1,9 @@
 # Week 6
 
+Some renderings to help me visualize how the interaction might take place. Rendering with ray tracing actually gives a good impression on what will work, and what won't in terms of light, color and brightness.
+
+![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render.gif)
+
 ![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-3.jpg?raw=true)
 
 ### Multiple I2C slaves solution
