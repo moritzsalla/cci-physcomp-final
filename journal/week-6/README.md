@@ -43,6 +43,8 @@ void loop () {
 
 #### Fading function
 
+Fades led to 255. When at 255, fades back to 0. Endless loop. Starting point for more complex functions.
+
 ```c++
 void torch_single_fade (int i, int t) {
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 1) {
