@@ -14,3 +14,23 @@ https://www.ebay.com/itm/PCF8575-IIC-I2C-I-O-Extension-Shield-Module-16-bit-SMBu
 3. Another option is to use a 74HC4067 multiplexer.
 
 What happens when I connect all of them to a single bus? The sensors addresses cannot be changed but perhaps this is not an issue. If the mashup of combined signals arent distorted or overamplified, it will suffice. I don't need to locate which sensor is returning which value. 
+
+#### Pulse Width Modulation (PWM)
+
+Need this to incrementally control the led torches. Still thinking how the light might actually e user controlleable, or if it should be at all. Probably no necessity.
+
+```C++
+void loop () {
+  // fade in from min to max in increments of 5 points:
+  for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
+    analogWrite(ledPin, fadeValue);
+    delay(30);
+  }
+
+// fade out from max to min in increments of 5 points:
+  for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 5) {
+    analogWrite(ledPin, fadeValue);
+    delay(30);
+  }
+}
+```
