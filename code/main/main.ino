@@ -49,8 +49,8 @@ void setup() {
   pinMode(led6, OUTPUT);
   pinMode(led7, OUTPUT);
 
-  torch_all_low();
-  isl_setup();
+  // torch_all_low();
+  //  isl_setup();
 }
 
 void loop() {
@@ -59,7 +59,8 @@ void loop() {
   int photo2input = analogRead(photo2pin);
   int photo3input = analogRead(photo3pin);
 
-  isl_start();
+  // isl_start();
+  torch_single_fade(led0, 10);
 
   // Serial.println(photo0input);
   // Serial.println(photo1input);
