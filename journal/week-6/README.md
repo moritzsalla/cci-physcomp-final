@@ -21,6 +21,14 @@ https://www.ebay.com/itm/PCF8575-IIC-I2C-I-O-Extension-Shield-Module-16-bit-SMBu
 
 What happens when I connect all of them to a single bus? The sensors addresses cannot be changed but perhaps this is not an issue. If the mashup of combined signals arent distorted or overamplified, it will suffice. I don't need to locate which sensor is returning which value. 
 
+#### Emulating I2C connectivity via Software
+
+https://github.com/christosku/ISL29125_SoftWire
+
+https://github.com/Fire7/SoftwareWire
+
+These two libraries allow for software emulation of I2C connectivity. I am using my spare analog pins as inputs. This'll allow me to finally use all 4 ambient light senors at once without the pain of using a multiplexer.
+
 #### Pulse Width Modulation (PWM)
 
 Need this to incrementally control the led torches. Still thinking how the light might actually e user controlleable, or if it should be at all. Probably no necessity.
@@ -41,9 +49,7 @@ void loop () {
 }
 ```
 
-#### Fading function
-
-Fades led to 255. When at 255, fades back to 0. Endless loop. Starting point for more complex functions.
+This function fafdes an led to 255. When at 255, fades back to 0. Endless loop. Starting point for more complex functions.
 
 https://youtu.be/EKUP-7Uccfg
 
@@ -63,10 +69,6 @@ void torch_single_fade (int i, int t) {
 }
 ```
 
-#### Emulating I2C connection via Software
+#### Finding a better material for the enclosure
 
-https://github.com/christosku/ISL29125_SoftWire
-
-https://github.com/Fire7/SoftwareWire
-
-These two libraries allow for software emulation of I2C connectivity. I am using my spare analog pins as inputs. This'll allow me to finally use all 4 ambient light senors at once without the pain of using a multiplexer.
+Went to another art supply shop. Silicone/latex seems the way to go. He only had the brown one though, albeit selling pigments. Pigments wont work because they likely make the material opaque. I need it semi translucent. Need to order this stuff on the internet.
