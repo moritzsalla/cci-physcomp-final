@@ -21,7 +21,7 @@ void torch_all_low () {
   digitalWrite(led7, LOW);
 }
 
-void torch_single_fade (int i, int t) {
+void torch_fade (int i, int t) {
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 1) {
     analogWrite(i, fadeValue);
     delay(t);

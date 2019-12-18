@@ -60,7 +60,13 @@ void loop() {
   int photo3input = analogRead(photo3pin);
 
   // isl_start();
-  torch_single_fade(led0, 10);
+  torch_fade(led0, 1);
+  torch_fade(led1, 2);
+  torch_fade(led2, 1);
+  torch_fade(led3, 1);
+  torch_fade(led4, 2);
+  torch_fade(led5, 1);
+  torch_fade(led6, 3);
 
   // Serial.println(photo0input);
   // Serial.println(photo1input);
