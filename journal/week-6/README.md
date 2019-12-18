@@ -62,3 +62,11 @@ void torch_single_fade (int i, int t) {
   }
 }
 ```
+
+#### Emulating I2C connection via Software
+
+https://github.com/christosku/ISL29125_SoftWire
+
+https://github.com/Fire7/SoftwareWire
+
+These two libraries allow for software emulation of I2C connectivity. I am using my spare analog pins as inputs. This'll allow me to finally use all 4 ambient light senors at once without the pain of using a multiplexer.

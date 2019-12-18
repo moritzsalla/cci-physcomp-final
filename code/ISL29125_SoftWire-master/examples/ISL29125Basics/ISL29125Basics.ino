@@ -35,7 +35,6 @@ void setup()
   Serial.begin(115200);
 
   // Initialize the ISL29125 with simple configuration so it starts sampling (Pin 2 is SDA, pin 3 is SCL)
-  if (RGB_sensor.init(2,3)) 
   {
     Serial.println("Sensor Initialization Successful\n\r");
   }
