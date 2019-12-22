@@ -14,12 +14,12 @@ https://forum.arduino.cc/index.php?topic=279000.0
 
 1. ISL29125s use the same address (1000100), which is hardwired. It therefore cannot be changed. christosku's library uses the Adafruit TCS34725 Color Sensors lib as a work around. It enables you to use different pins.
 
-2. Another option is to use PCF8575 i2c expander ICs. The data will cannot be read synchronously, though. Instead, the Arduino cycles through the slaves.   
-https://www.ebay.com/itm/PCF8575-IIC-I2C-I-O-Extension-Shield-Module-16-bit-SMBus-I-O-ports-For-Arduino-/351954909169
+2. Another option is to use PCF8575 i2c expander ICs. The data will cannot be read synchronously, though. Instead, the Arduino cycles through the slaves.  
+   https://www.ebay.com/itm/PCF8575-IIC-I2C-I-O-Extension-Shield-Module-16-bit-SMBus-I-O-ports-For-Arduino-/351954909169
 
 3. Another option is to use a 74HC4067 multiplexer.
 
-What happens when I connect all of them to a single bus? The sensors addresses cannot be changed but perhaps this is not an issue. If the mashup of combined signals arent distorted or overamplified, it will suffice. I don't need to locate which sensor is returning which value. 
+What happens when I connect all of them to a single bus? The sensors addresses cannot be changed but perhaps this is not an issue. If the mashup of combined signals arent distorted or overamplified, it will suffice. I don't need to locate which sensor is returning which value.
 
 #### Emulating I2C connectivity via Software
 
@@ -68,6 +68,12 @@ void torch_single_fade (int i, int t) {
   }
 }
 ```
+
+#### Output from two loudspeakers
+
+I want to use two loudspeakers to create a more complex soundscape. However, by standard, the tone function is limited to a single output.
+
+https://code.google.com/archive/p/rogue-code/wikis/ToneLibraryDocumentation.wiki
 
 #### Finding a better material for the enclosure
 

@@ -1,4 +1,3 @@
-
 void torch_all_high () {
   digitalWrite(led0, HIGH);
   digitalWrite(led1, HIGH);
