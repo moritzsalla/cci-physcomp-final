@@ -82,6 +82,18 @@ Went to another art supply shop. Silicone/latex seems the way to go. He only had
 #### Fading in and out revized
 
 ```c++
+//led A
+int led0 = 6;
+int led2 = 8;
+int led5 = 11;
+int led6 = 12;
+
+//led B
+int led1 = 7;
+int led3 = 9;
+int led4 = 10;
+int led7 = 13;
+
 void led_fade (int led, int t) {
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue++) {
     analogWrite(led, fadeValue);
