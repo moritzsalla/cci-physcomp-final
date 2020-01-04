@@ -111,12 +111,9 @@ void setup() {
 }
 
 void loop () {
-  led_fade(led0, led1, 5);
-  led_fade(led2, led3, 5);
-  led_fade(led4, led7, 5);
-  led_fade(led5, led6, 5);
-  led_fade(led7, led2, 5);
+  led_fade(ledA0, ledB0, random(2, 10));
+  led_fade(ledA1, ledB1, random(2, 10));
+  led_fade(ledA2, ledB2, random(2, 10));
+  led_fade(ledA3, ledB3, random(2, 10));
 }
-
-
 ```
