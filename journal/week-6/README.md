@@ -94,14 +94,29 @@ int led3 = 9;
 int led4 = 10;
 int led7 = 13;
 
-void led_fade (int led, int t) {
+void led_fade (int led0, int led1, int t) {
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue++) {
-    analogWrite(led, fadeValue);
+    analogWrite(led0, fadeValue);
+    analogWrite(led1, fadeValue);
     delay(t);
   }
   for (int fadeValue = 255 ; fadeValue >= 0; fadeValue--) {
-    analogWrite(led, fadeValue);
+    analogWrite(led0, fadeValue);
+    analogWrite(led1, fadeValue);
     delay(t);
   }
 }
+
+void setup() {
+}
+
+void loop () {
+  led_fade(led0, led1, 5);
+  led_fade(led2, led3, 5);
+  led_fade(led4, led7, 5);
+  led_fade(led5, led6, 5);
+  led_fade(led7, led2, 5);
+}
+
+
 ```
