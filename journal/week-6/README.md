@@ -69,9 +69,9 @@ void torch_single_fade (int i, int t) {
 }
 ```
 
-#### Output from two loudspeakers
+#### Loudspeakers
 
-I want to use two loudspeakers to create a more complex soundscape. However, by standard, the tone function is limited to a single output.
+I want to use two loudspeakers to create a more complex soundscape. However, by standard, the tone function is limited to a single output. Also, how do I play audio files instead of tones? Is this an efficient thing to do or will it be laggy?
 
 https://code.google.com/archive/p/rogue-code/wikis/ToneLibraryDocumentation.wiki
 

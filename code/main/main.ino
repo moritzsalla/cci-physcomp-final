@@ -46,7 +46,7 @@ int noteDurations[] = {
 
 void setup() {
   Serial.begin(9600);
-  
+
   // ISLs ---------------------
   if (RGB_sensor.init())
   {
@@ -84,7 +84,13 @@ void loop() {
   // Serial.print("B: "); Serial.println(blue,HEX);
   // Serial.println();
 
-  Serial.println(red, HEX);
+  int redAvg = (red0 + red1 + red2 + red3) / 4;
+  int green = (greenAvg0 + greenAvg1 + greenAvg2 + greenAvg3) / 4;
+  int blue = (blue0 + blue1 + blue2 + blue3) / 4;
+
+  int colorAvg = (red + green + blue) / 3;
+
+  Serial.println(colorAvg);
 
   // LEDs ---------------------
   // torch_fade(led0, 1);
