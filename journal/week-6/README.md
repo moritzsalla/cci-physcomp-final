@@ -78,3 +78,42 @@ https://code.google.com/archive/p/rogue-code/wikis/ToneLibraryDocumentation.wiki
 #### Finding a better material for the enclosure
 
 Went to another art supply shop. Silicone/latex seems the way to go. He only had the brown one though, albeit selling pigments. Pigments wont work because they likely make the material opaque. I need it semi translucent. Need to order this stuff on the internet.
+
+#### Fading in and out revized
+
+```c++
+//led A
+int led0 = 6;
+int led2 = 8;
+int led5 = 11;
+int led6 = 12;
+
+//led B
+int led1 = 7;
+int led3 = 9;
+int led4 = 10;
+int led7 = 13;
+
+void led_fade (int led0, int led1, int t) {
+  for (int fadeValue = 0 ; fadeValue <= 255; fadeValue++) {
+    analogWrite(led0, fadeValue);
+    analogWrite(led1, fadeValue);
+    delay(t);
+  }
+  for (int fadeValue = 255 ; fadeValue >= 0; fadeValue--) {
+    analogWrite(led0, fadeValue);
+    analogWrite(led1, fadeValue);
+    delay(t);
+  }
+}
+
+void setup() {
+}
+
+void loop () {
+  led_fade(ledA0, ledB0, random(2, 10));
+  led_fade(ledA1, ledB1, random(2, 10));
+  led_fade(ledA2, ledB2, random(2, 10));
+  led_fade(ledA3, ledB3, random(2, 10));
+}
+```
