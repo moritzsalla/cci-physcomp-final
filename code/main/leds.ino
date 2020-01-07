@@ -10,10 +10,3 @@ void led_fade (int led1, int led2, int t) {
     delay(t);
   }
 }
-
-void led () {
-  led_fade(ledA1, ledB1, random(10, 50));
-  led_fade(ledA2, ledB2, random(10, 50));
-  led_fade(ledA3, ledB3, random(10, 50));
-  led_fade(ledA4, ledB4, random(10, 50));
-}

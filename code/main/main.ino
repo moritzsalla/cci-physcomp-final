@@ -42,25 +42,28 @@ int ledB4 = 10;
 
 int piezo1 = 5;
 int piezo2 = 4;
-int speed = 90;
 
 void setup() {
   Serial.begin(9600);
 
   RGB_sensor_1.init(38, 36);
   RGB_sensor_2.init(38, 36);
+  RGB_sensor_3.init(38, 36);
+  RGB_sensor_4.init(38, 36);
 }
 
 void loop() {
-  // led();
+  led_fade(ledA1, ledB1, random(10, 50));
+  led_fade(ledA2, ledB2, random(10, 50));
+  led_fade(ledA3, ledB3, random(10, 50));
+  led_fade(ledA4, ledB4, random(10, 50));
 
   // PHOTORESISTOR ---------------------
-  //  int photo0in = analogRead(photo0pin);
-  //  int photo1in = analogRead(photo1pin);
-  //  int photo2in = analogRead(photo2pin);
-  //  int photo3in = analogRead(photo3pin);
-  //  int photoAvg = (photo0in + photo1in + photo2in + photo3in) / 4;
-  //  tone(piezo1, photoAvg);
+  int photo1in = analogRead(photo1pin);
+  int photo2in = analogRead(photo2pin);
+  int photo3in = analogRead(photo3pin);
+  int photo4in = analogRead(photo4pin);
+  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
 
   // ISLs ---------------------
   unsigned int red1 = RGB_sensor_1.readRed();
