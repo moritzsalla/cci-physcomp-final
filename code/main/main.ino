@@ -12,7 +12,10 @@
 #include "ISL29125_SoftWire.h"
 #include "SFE_ISL29125.h"
 
-ISL29125_SOFT RGB_sensor;
+ISL29125_SOFT RGB_sensor_1;
+ISL29125_SOFT RGB_sensor_2;
+ISL29125_SOFT RGB_sensor_3;
+ISL29125_SOFT RGB_sensor_4;
 
 int melody[] = {
   NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
@@ -22,32 +25,30 @@ int noteDurations[] = {
   4, 8, 8, 4, 4, 4, 4, 4
 };
 
-int photo0pin = A0;
-int photo1pin = A1;
-int photo2pin = A2;
-int photo3pin = A3;
-int photo0input, photo1input, photo2input, photoOut3input = 0;
+int photo1pin = A0;
+int photo2pin = A1;
+int photo3pin = A2;
+int photo4pin = A3;
+int photo1input, photo2input, photo3input, photo4input = 0;
 
-int ledA0 = 6;
-int ledA1 = 8;
-int ledA2 = 11;
-int ledA3 = 12;
-int ledB0 = 7;
-int ledB1 = 13;
-int ledB2 = 9;
-int ledB3 = 10;
+int ledA1 = 6;
+int ledA2 = 8;
+int ledA3 = 11;
+int ledA4 = 12;
+int ledB1 = 7;
+int ledB2 = 13;
+int ledB3 = 9;
+int ledB4 = 10;
 
-int piezo0 = 5;
-int piezo1 = 4;
+int piezo1 = 5;
+int piezo2 = 4;
 int speed = 90;
 
 void setup() {
   Serial.begin(9600);
 
-  if (RGB_sensor.init(38,36)) 
-  {
-    Serial.println("Sensor Initialization Successful\n\r");
-  }
+  RGB_sensor_1.init(38, 36);
+  RGB_sensor_2.init(38, 36);
 }
 
 void loop() {
@@ -62,19 +63,30 @@ void loop() {
   //  tone(piezo1, photoAvg);
 
   // ISLs ---------------------
-  unsigned int red = RGB_sensor.readRed();
-  unsigned int green = RGB_sensor.readGreen();
-  unsigned int blue = RGB_sensor.readBlue();
+  unsigned int red1 = RGB_sensor_1.readRed();
+  unsigned int green1 = RGB_sensor_1.readGreen();
+  unsigned int blue1 = RGB_sensor_1.readBlue();
 
-  Serial.print("R: "); Serial.println(red, HEX);
-  Serial.print("G: "); Serial.println(green, HEX);
-  Serial.print("B: "); Serial.println(blue, HEX);
+  unsigned int red2 = RGB_sensor_2.readRed();
+  unsigned int green2 = RGB_sensor_2.readGreen();
+  unsigned int blue2 = RGB_sensor_2.readBlue();
+
+  unsigned int red3 = RGB_sensor_3.readRed();
+  unsigned int green3 = RGB_sensor_3.readGreen();
+  unsigned int blue3 = RGB_sensor_3.readBlue();
+
+  unsigned int red4 = RGB_sensor_4.readRed();
+  unsigned int green4 = RGB_sensor_4.readGreen();
+  unsigned int blue4 = RGB_sensor_4.readBlue();
+
+  int redAvg = (red1 + red2 + red3 + red4) / 4;
+  int greenAvg = (green1 + green2 + green3 + green4) / 4;
+  int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
+
+  Serial.print("R: "); Serial.println(redAvg, HEX);
+  Serial.print("G: "); Serial.println(greenAvg, HEX);
+  Serial.print("B: "); Serial.println(blueAvg, HEX);
   Serial.println();
 
-//  int redAvg = (red0 + red1 + red2 + red3) / 4;
-//  int green = (greenAvg0 + greenAvg1 + greenAvg2 + greenAvg3) / 4;
-//  int blue = (blue0 + blue1 + blue2 + blue3) / 4;
-//  int colorAvg = (red + green + blue) / 3;
-
-// tone(piezo1, photoAvg);
+  // tone(piezo1, photoAvg);
 }
