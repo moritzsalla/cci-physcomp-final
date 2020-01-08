@@ -58,15 +58,15 @@ void setup() {
 }
 
 void loop() {
-   time = millis();
-  
+  time = millis();
+  unsigned long currentMillis = millis();
+
   ledFade();
 
-//  unsigned long currentMillis = millis();
-//
-//  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
-//    previousMillis = currentMillis;
-//  }
+  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
+
+    previousMillis = currentMillis;
+  }
 
 
 
