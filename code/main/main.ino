@@ -12,6 +12,11 @@
 #include "ISL29125_SoftWire.h"
 #include "SFE_ISL29125.h"
 
+unsigned long time;
+int interval = random(1000, 5000);
+unsigned long previousMillis = 0;
+
+
 ISL29125_SOFT RGB_sensor_1;
 ISL29125_SOFT RGB_sensor_2;
 ISL29125_SOFT RGB_sensor_3;
@@ -53,10 +58,17 @@ void setup() {
 }
 
 void loop() {
-//  led_fade(ledA1, ledB1, random(10, 50));
-//  led_fade(ledA2, ledB2, random(10, 50));
-//  led_fade(ledA3, ledB3, random(10, 50));
-//  led_fade(ledA4, ledB4, random(10, 50));
+   time = millis();
+  
+  ledFade();
+
+//  unsigned long currentMillis = millis();
+//
+//  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
+//    previousMillis = currentMillis;
+//  }
+
+
 
   // PHOTORESISTOR ---------------------
   int photo1in = analogRead(photo1pin);
@@ -86,10 +98,10 @@ void loop() {
   int greenAvg = (green1 + green2 + green3 + green4) / 4;
   int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-  Serial.print("R: "); Serial.println(redAvg, DEC);
-  Serial.print("G: "); Serial.println(greenAvg, DEC);
-  Serial.print("B: "); Serial.println(blueAvg, DEC);
-  Serial.println();
+  //  Serial.print("R: "); Serial.println(redAvg, DEC);
+  //  Serial.print("G: "); Serial.println(greenAvg, DEC);
+  //  Serial.print("B: "); Serial.println(blueAvg, DEC);
+  //  Serial.println();
 
   // tone(piezo1, photoAvg);
 }
