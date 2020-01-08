@@ -13,9 +13,6 @@
 #include "SFE_ISL29125.h"
 
 unsigned long time;
-int interval = random(1000, 5000);
-unsigned long previousMillis = 0;
-
 
 ISL29125_SOFT RGB_sensor_1;
 ISL29125_SOFT RGB_sensor_2;
@@ -59,16 +56,8 @@ void setup() {
 
 void loop() {
   time = millis();
-  unsigned long currentMillis = millis();
 
   ledFade();
-
-  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
-
-    previousMillis = currentMillis;
-  }
-
-
 
   // PHOTORESISTOR ---------------------
   int photo1in = analogRead(photo1pin);
