@@ -4,12 +4,11 @@ I’m interested in how atmosphere is created through sound and light. Possibly 
 
 This made me wonder if light can be used as an interface, for example, to create tone, compositions and perhaps even dialog. Possibly by measuring for example brightness, color, source (artificial or sun), and duration. I'm not yet sure if the light source is to be static and there for the viewer to manipulate, or if it is free for the audience to bring in their own dynamic light sources. The output is a synthesizer that produces an array of different tones, which makes it possible to compose a melody by playing with the light in certain ways. Does a complex synthesizer count as multiple outputs? If not, I'd have to rethink and possibly add a visualization (if this doesn't interfere with the light sensors) or vibration feedback. This idea could develop into a game, an instrument, a performance or perhaps even a sort of design for therapy.
 
-Quick mockups of how this interaction could take place. An array of sensors is spread across the surface and the amount of area that is lit/unlit will trigger an output.
+__Quick mockups of how this interaction could take place. An array of sensors is spread across the surface and the amount of area that is lit/unlit will trigger an output.__
 
 ![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-1.jpg)
 ![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-2.jpg)
 
-![Image](scan-001.png)
 ![Image](scan-002.png)
 ![Image](scan-003.png)
 ![Image](scan-004.png)
