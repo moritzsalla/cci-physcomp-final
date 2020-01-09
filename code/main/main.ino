@@ -19,8 +19,8 @@ ISL29125_SOFT RGB_sensor_2;
 ISL29125_SOFT RGB_sensor_3;
 ISL29125_SOFT RGB_sensor_4;
 
-int piezo1 = 5;
-int piezo2 = 4;
+int piezo1 = 3;
+int piezo2 = 2;
 
 int photo1pin = A0;
 int photo2pin = A1;
@@ -34,8 +34,8 @@ int ledA3 = 11;
 int ledA4 = 12;
 int ledB1 = 7;
 int ledB2 = 13;
-// int ledB3 = 9; pin interferes w/ audio
-// int ledB4 = 10; pin interferes w/ audio
+int ledB3 = 5; 
+int ledB4 = 4; 
 
 void setup() {
   Serial.begin(9600);
@@ -86,8 +86,6 @@ void loop() {
       Serial.print("B: "); Serial.println(blueAvg, DEC);
       Serial.println();
 
-      delay(500);
-
   // output TONE ---------------------
   // map() map data to deseried effect !
   //Serial.println(photoAvg);
@@ -103,7 +101,7 @@ void loop() {
 //    noTone(piezo1);
 //  }
 
-// tone(piezo2, sin(time * 0.01));
+// tone(piezo1, 300);
 
 
 }
