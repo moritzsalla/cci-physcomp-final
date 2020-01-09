@@ -19,13 +19,8 @@ ISL29125_SOFT RGB_sensor_2;
 ISL29125_SOFT RGB_sensor_3;
 ISL29125_SOFT RGB_sensor_4;
 
-int melody[] = {
-  NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
-};
-
-int noteDurations[] = {
-  4, 8, 8, 4, 4, 4, 4, 4
-};
+int piezo1 = 5;
+int piezo2 = 4;
 
 int photo1pin = A0;
 int photo2pin = A1;
@@ -39,11 +34,8 @@ int ledA3 = 11;
 int ledA4 = 12;
 int ledB1 = 7;
 int ledB2 = 13;
-int ledB3 = 9;
-int ledB4 = 10;
-
-int piezo1 = 5;
-int piezo2 = 4;
+// int ledB3 = 9; pin interferes w/ audio
+// int ledB4 = 10; pin interferes w/ audio
 
 void setup() {
   Serial.begin(9600);
@@ -89,24 +81,29 @@ void loop() {
   int greenAvg = (green1 + green2 + green3 + green4) / 4;
   int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-  //    Serial.print("R: "); Serial.println(redAvg, DEC);
-  //    Serial.print("G: "); Serial.println(greenAvg, DEC);
-  //    Serial.print("B: "); Serial.println(blueAvg, DEC);
-  //    Serial.println();
+      Serial.print("R: "); Serial.println(redAvg, DEC);
+      Serial.print("G: "); Serial.println(greenAvg, DEC);
+      Serial.print("B: "); Serial.println(blueAvg, DEC);
+      Serial.println();
+
+      delay(500);
 
   // output TONE ---------------------
-
-  Serial.println(photoAvg);
+  // map() map data to deseried effect !
+  //Serial.println(photoAvg);
   
   int interval = photoAvg + 500 ; // adjust based on lighting situ and effect
   unsigned long currentMillis = millis();
 
-  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
-    tone(piezo1, photoAvg);
-    previousMillis = currentMillis;
-  } else {
-    noTone(piezo1);
-  }
+//  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
+//    noTone(piezo2);
+//    tone(piezo1, photoAvg);
+//    previousMillis = currentMillis;
+//  } else {
+//    noTone(piezo1);
+//  }
+
+// tone(piezo2, sin(time * 0.01));
 
 
 }
