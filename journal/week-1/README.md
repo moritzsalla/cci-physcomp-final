@@ -20,4 +20,3 @@ __Quick mockups of how this interaction could take place. An array of sensors is
 ![Image](scan-010.png)
 ![Image](scan-011.png)
 ![Image](scan-012.png)
-![Image](scan-013.png)
