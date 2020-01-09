@@ -48,16 +48,16 @@ int piezo2 = 4;
 void setup() {
   Serial.begin(9600);
 
-  RGB_sensor_1.init(38, 36);
-  RGB_sensor_2.init(38, 36);
-  RGB_sensor_3.init(38, 36);
-  RGB_sensor_4.init(38, 36);
+  RGB_sensor_1.init(39, 38);
+  RGB_sensor_2.init(37, 36);
+  RGB_sensor_3.init(35, 34);
+  RGB_sensor_4.init(33, 32);
 }
 
 void loop() {
   time = millis();
 
-  ledFade();
+  // ledFade();
 
   // PHOTORESISTOR ---------------------
   int photo1in = analogRead(photo1pin);
@@ -87,10 +87,10 @@ void loop() {
   int greenAvg = (green1 + green2 + green3 + green4) / 4;
   int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-  //  Serial.print("R: "); Serial.println(redAvg, DEC);
-  //  Serial.print("G: "); Serial.println(greenAvg, DEC);
-  //  Serial.print("B: "); Serial.println(blueAvg, DEC);
-  //  Serial.println();
+//    Serial.print("R: "); Serial.println(redAvg, DEC);
+//    Serial.print("G: "); Serial.println(greenAvg, DEC);
+//    Serial.print("B: "); Serial.println(blueAvg, DEC);
+//    Serial.println();
 
   // tone(piezo1, photoAvg);
 }

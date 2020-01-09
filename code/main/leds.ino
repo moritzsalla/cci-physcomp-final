@@ -1,18 +1,18 @@
-int value, value2;
+int LEDval, LEDval2;
 int periode = 20000;
 
 void ledFade () {
-  value = 128 + 128 * sin(2 * PI / periode * (time));
-  value2 = 128 + 128 * cos(2 * PI / periode * (time));
+  LEDval = 128 + 128 * sin(2 * PI / periode * (time));
+  LEDval2 = 128 + 128 * cos(2 * PI / periode * (time));
 
-  analogWrite(ledA1, value2);
-  analogWrite(ledB1, value2);
-  analogWrite(ledA2, value);
-  analogWrite(ledB2, value);
-  analogWrite(ledA3, value2);
-  analogWrite(ledB3, value2);
-  analogWrite(ledA4, value);
-  analogWrite(ledB4, value);
+  analogWrite(ledA1, LEDval2);
+  analogWrite(ledB1, LEDval2);
+  analogWrite(ledA2, LEDval);
+  analogWrite(ledB2, LEDval);
+  analogWrite(ledA3, LEDval2);
+  analogWrite(ledB3, LEDval2);
+  analogWrite(ledA4, LEDval);
+  analogWrite(ledB4, LEDval);
 }
 
 void randLed () {
