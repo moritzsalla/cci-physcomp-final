@@ -10,16 +10,16 @@ void ledFade () {
   analogWrite(ledA2, LEDval);
   analogWrite(ledB2, LEDval);
   analogWrite(ledA3, LEDval2);
-  analogWrite(ledB3, LEDval2);
+  // analogWrite(ledB3, LEDval2);
   analogWrite(ledA4, LEDval);
-  analogWrite(ledB4, LEDval);
+  // analogWrite(ledB4, LEDval);
 }
 
 void randLed () {
   analogWrite(ledA1, random(0, 255));
   analogWrite(ledA2, random(0, 255));
   analogWrite(ledA3, random(0, 255));
-  analogWrite(ledA4, random(0, 255));
+  // analogWrite(ledA4, random(0, 255));
   analogWrite(ledB1, random(0, 255));
   analogWrite(ledB2, random(0, 255));
   analogWrite(ledB3, random(0, 255));

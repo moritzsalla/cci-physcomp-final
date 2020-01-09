@@ -1,10 +1,9 @@
 /*******************************
   LIGHT, Moritz Salla
-  ----
-  Experiemental interface that uses light as
+  Experiemental instrument that uses light as
   an interface to output tones & melodies.
   It can be played by a single player or as a
-  dialog between two players
+  dialog between two.
 *******************************/
 
 #include "pitches.h"
@@ -13,6 +12,7 @@
 #include "SFE_ISL29125.h"
 
 unsigned long time;
+unsigned long previousMillis = 0;
 
 ISL29125_SOFT RGB_sensor_1;
 ISL29125_SOFT RGB_sensor_2;
@@ -31,7 +31,7 @@ int photo1pin = A0;
 int photo2pin = A1;
 int photo3pin = A2;
 int photo4pin = A3;
-int photo1input, photo2input, photo3input, photo4input = 0;
+unsigned int photo1input, photo2input, photo3input, photo4input;
 
 int ledA1 = 6;
 int ledA2 = 8;
@@ -56,17 +56,15 @@ void setup() {
 
 void loop() {
   time = millis();
+  ledFade();
 
-  // ledFade();
-
-  // PHOTORESISTOR ---------------------
+  // Grab vals from PHOTORESISTOR ---------------------
   int photo1in = analogRead(photo1pin);
   int photo2in = analogRead(photo2pin);
   int photo3in = analogRead(photo3pin);
   int photo4in = analogRead(photo4pin);
-  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
 
-  // ISLs ---------------------
+  // Grab vals from ISLs ---------------------
   unsigned int red1 = RGB_sensor_1.readRed();
   unsigned int green1 = RGB_sensor_1.readGreen();
   unsigned int blue1 = RGB_sensor_1.readBlue();
@@ -83,14 +81,32 @@ void loop() {
   unsigned int green4 = RGB_sensor_4.readGreen();
   unsigned int blue4 = RGB_sensor_4.readBlue();
 
+  // Calc AVERAGES ---------------------
+
+  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
+
   int redAvg = (red1 + red2 + red3 + red4) / 4;
   int greenAvg = (green1 + green2 + green3 + green4) / 4;
   int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-//    Serial.print("R: "); Serial.println(redAvg, DEC);
-//    Serial.print("G: "); Serial.println(greenAvg, DEC);
-//    Serial.print("B: "); Serial.println(blueAvg, DEC);
-//    Serial.println();
+  //    Serial.print("R: "); Serial.println(redAvg, DEC);
+  //    Serial.print("G: "); Serial.println(greenAvg, DEC);
+  //    Serial.print("B: "); Serial.println(blueAvg, DEC);
+  //    Serial.println();
 
-  // tone(piezo1, photoAvg);
+  // output TONE ---------------------
+
+  Serial.println(photoAvg);
+  
+  int interval = photoAvg + 500 ; // adjust based on lighting situ and effect
+  unsigned long currentMillis = millis();
+
+  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
+    tone(piezo1, photoAvg);
+    previousMillis = currentMillis;
+  } else {
+    noTone(piezo1);
+  }
+
+
 }
