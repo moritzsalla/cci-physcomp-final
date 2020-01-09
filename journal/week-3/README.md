@@ -83,16 +83,4 @@ I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the ho
 
 Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
 
-### NEU
-
-Hooked up sensros
-UNreliable
-
-Photoresistors work
-Need to be mapped once soldered
-
-Cables slip out nonstop
-
 ![Image](screenshot-3.png)
-
-bild bild
