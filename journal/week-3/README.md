@@ -82,5 +82,3 @@ Even though I can power the sensors with 3.5V, it appears like I need a logic le
 I have ordered one "SparkFun Logic Level Converter - Bi-Directional" with the hopes of being able to connect all my sensors to it at once.
 
 Here is it's hookup guide: https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide
-
-![Image](screenshot-3.png)
