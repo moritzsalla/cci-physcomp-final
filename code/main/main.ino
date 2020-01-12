@@ -1,5 +1,5 @@
 /*******************************
-  LIGHT, Moritz Salla
+  "Theremin," Moritz Salla
   Experiemental instrument that uses light as
   an interface to output tones & melodies.
   It can be played by a single player or as a
@@ -19,8 +19,8 @@ ISL29125_SOFT RGB_sensor_2;
 ISL29125_SOFT RGB_sensor_3;
 ISL29125_SOFT RGB_sensor_4;
 
-int piezo1 = 3;
-int piezo2 = 2;
+int speaker1 = 3;
+int speaker2 = 2;
 
 int photo1pin = A0;
 int photo2pin = A1;
@@ -34,8 +34,8 @@ int ledA3 = 11;
 int ledA4 = 12;
 int ledB1 = 7;
 int ledB2 = 13;
-int ledB3 = 5; 
-int ledB4 = 4; 
+int ledB3 = 5;
+int ledB4 = 4;
 
 void setup() {
   Serial.begin(9600);
@@ -75,33 +75,37 @@ void loop() {
 
   // Calc AVERAGES ---------------------
 
-  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
-
   int redAvg = (red1 + red2 + red3 + red4) / 4;
   int greenAvg = (green1 + green2 + green3 + green4) / 4;
   int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-      Serial.print("R: "); Serial.println(redAvg, DEC);
-      Serial.print("G: "); Serial.println(greenAvg, DEC);
-      Serial.print("B: "); Serial.println(blueAvg, DEC);
-      Serial.println();
+  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
+  int colorAvg = (redAvg + greenAvg + blueAvg) / 4;
 
-  // output TONE ---------------------
-  // map() map data to deseried effect !
-  //Serial.println(photoAvg);
+  int totalAvg = (photoAvg + colorAvg) / 2;
+
+  // TONE ---------------------
   
-  int interval = photoAvg + 500 ; // adjust based on lighting situ and effect
+  int interval = photoAvg % 200; // adjust based on lighting situ and effect
   unsigned long currentMillis = millis();
 
-//  if ((unsigned long)(currentMillis - previousMillis) >= interval) {
-//    noTone(piezo2);
-//    tone(piezo1, photoAvg);
-//    previousMillis = currentMillis;
-//  } else {
-//    noTone(piezo1);
-//  }
+  int threshold = 700; // determines when theremin starts processing light signals
+  Serial.println(totalAvg);
 
-// tone(piezo1, 300);
+  if (totalAvg >= threshold) {
+    if ((unsigned long)(currentMillis - previousMillis) >= interval) {
+      noTone(speaker2);
+      play(speaker1, colorAvg);
+      previousMillis = currentMillis;
+    } else {
+      noTone(speaker1);
+      noTone(speaker2);
+    }
+  } else {
+    noTone(speaker1);
+    noTone(speaker2);
+  }
+
 
 
 }
