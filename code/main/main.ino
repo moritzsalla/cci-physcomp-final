@@ -75,32 +75,31 @@ void loop() {
 
   // Calc AVERAGES ---------------------
 
-  int redAvg = (red1 + red2 + red3 + red4) / 4;
-  int greenAvg = (green1 + green2 + green3 + green4) / 4;
-  int blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
+  float redAvg = (red1 + red2 + red3 + red4) / 4;
+  float greenAvg = (green1 + green2 + green3 + green4) / 4;
+  float blueAvg = (blue1 + blue2 + blue3 + blue4) / 4;
 
-  int photoAvg = (photo1in + photo2in + photo3in + photo4in) / 4;
-  int colorAvg = (redAvg + greenAvg + blueAvg) / 4;
+  float photoAvg = photo2in + photo3in + photo4in;
+  photoAvg = photoAvg / 3;
 
-  int totalAvg = (photoAvg + colorAvg) / 2;
+  float colorAvg = redAvg + greenAvg + blueAvg;
+  colorAvg = colorAvg / 4;
+
+  float totalAvg = photoAvg + colorAvg;
+  totalAvg = totalAvg / 2;
 
   // TONE ---------------------
-  
-  int interval = photoAvg % 200; // adjust based on lighting situ and effect
   unsigned long currentMillis = millis();
 
-  int threshold = 700; // determines when theremin starts processing light signals
-  Serial.println(totalAvg);
+  int threshold = 3; // determines when theremin starts processing light signals
 
-  if (totalAvg >= threshold) {
-    if ((unsigned long)(currentMillis - previousMillis) >= interval) {
-      noTone(speaker2);
-      play(speaker1, colorAvg);
-      previousMillis = currentMillis;
-    } else {
-      noTone(speaker1);
-      noTone(speaker2);
-    }
+  float normPhoto = map(photoAvg, 0, 80, 50, 300);
+  float normColor = map(colorAvg, 0, 5, 50, 200);
+
+  Serial.println(colorAvg);
+
+  if (photo3in > threshold) {    
+    play(speaker1, normColor);
   } else {
     noTone(speaker1);
     noTone(speaker2);
