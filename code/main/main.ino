@@ -33,8 +33,8 @@ int ledA2 = 8;
 int ledA3 = 11;
 int ledA4 = 12;
 int ledB1 = 7;
-int ledB2 = 13;
-int ledB3 = 5;
+int ledB2 = 5;
+int ledB3 = 13;
 int ledB4 = 4;
 
 void setup() {
@@ -91,12 +91,12 @@ void loop() {
   // TONE ---------------------
   unsigned long currentMillis = millis();
 
-  int threshold = 3; // determines when theremin starts processing light signals
+  int threshold = 2; // determines when theremin starts processing light signals
 
   float normPhoto = map(photoAvg, 0, 80, 50, 300);
   float normColor = map(colorAvg, 0, 5, 50, 200);
 
-  Serial.println(colorAvg);
+  Serial.println(photo3in);
 
   if (photo3in > threshold) {    
     play(speaker1, normColor);
@@ -104,7 +104,5 @@ void loop() {
     noTone(speaker1);
     noTone(speaker2);
   }
-
-
 
 }
