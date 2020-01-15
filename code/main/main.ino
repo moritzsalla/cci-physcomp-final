@@ -1,5 +1,7 @@
 /*******************************
-  "Theremin," Moritz Salla
+  ╔╦╗╦ ╦╔═╗╦═╗╔═╗╔╦╗╦╔╗╔
+   ║ ╠═╣║╣ ╠╦╝║╣ ║║║║║║║
+   ╩ ╩ ╩╚═╝╩╚═╚═╝╩ ╩╩╝╚╝
   Experiemental instrument that uses light as
   an interface to output tones & melodies.
   It can be played by a single player or as a
@@ -98,7 +100,7 @@ void loop() {
 
   Serial.println(photo3in);
 
-  if (photo3in > threshold) {    
+  if (photo3in > threshold) {
     play(speaker1, normColor);
   } else {
     noTone(speaker1);
