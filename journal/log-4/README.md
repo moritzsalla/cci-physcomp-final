@@ -1,4 +1,4 @@
-# Week 4
+# Log 4
 
 ## Physical Encasing
 
@@ -16,11 +16,9 @@ My compartmentalized approach made me run out of space. I've resoldered everythi
 
 ![Image](image-3.jpg)
 
-## Testing all the sensors at once
+## Testing all sensors at once
 
-Before speration:
-
-![Image](screenshot-0.png)
+![Image](screenshot-1.png)
 
 ```c++
 float brightness = 0;
@@ -44,32 +42,26 @@ void loop() {
 }
 ```
 
-Using 3.5V:
-
-![Image](screenshot-1.png)
-
-The mega can take a **max. stable baud rate of 115200**. This runs quicker but will choke the monitor/plotter when there is a mistake in the code. Using 5V will yield a much cleaner out. It's rather satisfying to watch this:
+The mega can take a **max. stable baud rate of 115200**. This runs quicker but will choke the monitor/plotter when there is a mistake in the code. Using 5V will yield a much cleaner out. It's rather satisfying to watch this. One photoresistor seems to be disfunctional (red). I might have to resolder this one.
 
 ![Image](screenshot-2.png)
 
-## Update
+## To–Do
 
 ### Wiring
 
-- [ ] 4th photoresistor isn't working. Find out why.
-- [ ] Set ISLs to different addresses so that they can be individually read out.
-- [x] Find out why speaker_start() miraculously isn't in scope, altough other files are.
-- [ ] Find out how to play 2 speakers at same time
+- 4th photoresistor isn't working. Find out why.
+- Set ISLs to different addresses so that they can be individually read out.
+- Find out why speaker_start() miraculously isn't in scope, altough other files are.
+- Find out how to play 2 speakers at same time
 
 ### Encasing
 
-- [ ] Find better, more transparent and less colored material than the silicone from art supply shop
-- [x] Wait for christmas bobles to arrive (torches)
-- [ ] Pour torches using moldes
+- Find better, more transparent and less colored material than the silicone from art supply shop
+- Wait for christmas bobles to arrive (torches)
+- Pour torches using moldes
 
 ### Programming
 
-- [x] Get all sensors to work
-- [ ] Troubleshoot minor problems
-
-<https://www.bluedot.space/tutorials/how-many-devices-can-you-connect-on-i2c-bus/> <https://maker.pro/arduino/projects/arduino-speaker> <https://forum.arduino.cc/index.php?topic=77447.0><https://www.programmingelectronics.com/an-easy-way-to-make-noise-with-arduino-using-tone/> x
+- Get all sensors to work
+- Troubleshoot minor problems
