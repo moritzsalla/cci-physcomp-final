@@ -33,12 +33,15 @@ Some more inspiration I found in a shop in china town:
 Getting my hands dirty. Working with latex is not as easy as it looks. It dries rather slowly. Its difficult to create the right thickness. Also, it will take on any bristle strokes from the brush you are using to coat the mold. Furthermore, it changes color and becomes brown. I haven't figured why this is the case, either because it reacts to light or my tote bag.
 
 ![Image](image-03.jpeg)
+
 ![Image](image-04.jpeg)
+
 ![Image](image-05.jpeg)
 
 Half an hour into drying time the silicone appeared competely opaque with little color tint. A day after the casting the silicone turned semitransparent, albeit having taken on a very distinct color. This will skew sensor readings. The texture is perfect though. I'll need to find a similar, colorless material.
 
 ![Image](image-06.jpeg)
+
 ![Image](image-07.jpeg)
 
 ### Final Interior

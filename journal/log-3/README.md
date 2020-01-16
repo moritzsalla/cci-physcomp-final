@@ -12,6 +12,7 @@ Since I now have my hands on a suitable board and my color sensors, I can fetch 
 - HEX = hex color values
 
 ![Image](screenshot-1.png)
+
 ![Image](screenshot-2.png)
 
 ### I2C Ports

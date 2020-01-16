@@ -13,6 +13,7 @@ Taping the cables together close to the breakout board will helpfully spread for
 For now I am using this styrophome ball to prototype. I poke holes into the ball in order to bring all the technology together on the inside. The sensors will be stuck, not floating around like in the picture.
 
 ![Image](image-003.jpeg)
+
 ![Image](image-004.jpeg)
 
 The ambient light sensors (ISL29125 RGB Light Sensor [SEN-12829]) have arrived and I am testing them out. They work! The output is in HEX color values—I hope Arduino provides an easy way to convert these to floating-point. One of these breakout boards requires two analog ins. Here is the official documentation: https://learn.sparkfun.com/tutorials/isl29125-rgb-light-sensor-hookup-guide
@@ -23,8 +24,11 @@ The ambient light sensors (ISL29125 RGB Light Sensor [SEN-12829]) have arrived a
 2. Connect the 3.3V and GND on the Arduino to the 3.3V pin on the breakout board. Connect SDA on the breakout to A4 on the Uno, SCL to A5 on the Uno.
 
 ![Image](image-005.jpeg)
+
 ![Image](image-006.jpeg)
+
 ![Image](image-007.jpeg)
+
 ![Image](image-008.jpeg)
 
 Bought my own Board, a Sunfounder Mega (SUNFOUNDER Mega 2560 R3). It accommodates 16 analog ins, whereas the leonardo only has 6. Since I need 12 and multiplexing is not an option, this is the optimal board. I was thinking of using two Arduinos but setting up a serial connection between them and packing all of that wire jungle into relatively compact space convinced me to just spend the money in order to greatly simplify life.

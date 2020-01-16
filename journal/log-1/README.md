@@ -6,19 +6,30 @@ This made me wonder if light can be used as an interface, for example, to create
 
 **Quick mockups of how this interaction could take place. An array of sensors is spread across the surface and the amount of area that is lit/unlit will trigger an output.**
 
-![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-1.jpg)
-![Image](https://github.com/moritzsalla/cci-physcomp-final/blob/master/renderings/render-2.jpg)
+![Image](render-1.jpg)
+
+![Image](render-2.jpg)
 
 **An excerpt of my sketchbook, showing brainstorming, inspirations and initial sketches.**
 
 ![Image](scan-002.png)
+
 ![Image](scan-003.png)
+
 ![Image](scan-004.png)
+
 ![Image](scan-005.png)
+
 ![Image](scan-006.png)
+
 ![Image](scan-007.png)
+
 ![Image](scan-008.png)
+
 ![Image](scan-009.png)
+
 ![Image](scan-010.png)
+
 ![Image](scan-011.png)
+
 ![Image](scan-012.png)
