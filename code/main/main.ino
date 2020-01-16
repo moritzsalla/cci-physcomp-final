@@ -1,6 +1,6 @@
 /*******************************
   ╔╦╗╦ ╦╔═╗╦═╗╔═╗╔╦╗╦╔╗╔
-   ║ ╠═╣║╣ ╠╦╝║╣ ║║║║║║║
+   ║ ╠═╣║╣ ╠╦╝║╣ ║║║║║║║ V1
    ╩ ╩ ╩╚═╝╩╚═╚═╝╩ ╩╩╝╚╝
   Experiemental instrument that uses light as
   an interface to output tones & melodies.
