@@ -11,7 +11,7 @@
 
 #include "ISL29125_SoftWire.h"
 #include "SFE_ISL29125.h"
-#include "head.h"
+#include "header.h"
 
 void setup() {
   Serial.begin(9600);

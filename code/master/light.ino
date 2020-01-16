@@ -1,7 +1,7 @@
 int LEDval, LEDval2;
 int frequency = 50000; 
 
-void light () {
+void light() {
   // create sine wave
   LEDval = 128 + 128 * sin(2 * PI / frequency * (millis()));
   LEDval2 = 128 + 128 * cos(2 * PI / frequency * (millis()));

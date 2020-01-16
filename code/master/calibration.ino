@@ -17,12 +17,12 @@ void calibrate() {
     // calculate average
     photoValue = (analogRead(photo1pin) + analogRead(photo2pin) + analogRead(photo3pin) + analogRead(photo4pin)) / 4;
 
-    // minimum sensor value
+    // calculate minimum sensor value
     if (photoValue < photoMin) {
       photoMin = photoValue;
     }
 
-    // maximum sensor value
+    // calculate maximum sensor value
     if (colorValue < colorMin) {
       colorMin = colorValue;
     }

@@ -1,6 +1,4 @@
 
-unsigned long previousMillis = 0;
-
 ISL29125_SOFT RGB_sensor_1;
 ISL29125_SOFT RGB_sensor_2;
 ISL29125_SOFT RGB_sensor_3;
