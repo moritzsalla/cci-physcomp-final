@@ -1,4 +1,5 @@
 void initialize() {
+  // initialize color sensors through softwire lib
   RGB_sensor_1.init(39, 38);
   RGB_sensor_2.init(37, 36);
   RGB_sensor_3.init(35, 34);
@@ -7,11 +8,13 @@ void initialize() {
 
 void calibrate() {
   while (millis() < 2000) {
+    // read photoresistors
     photo1in = analogRead(photo1pin);
     photo2in = analogRead(photo2pin);
     photo3in = analogRead(photo3pin);
     photo4in = analogRead(photo4pin);
 
+    // calculate average
     photoValue = (analogRead(photo1pin) + analogRead(photo2pin) + analogRead(photo3pin) + analogRead(photo4pin)) / 4;
 
     // minimum sensor value

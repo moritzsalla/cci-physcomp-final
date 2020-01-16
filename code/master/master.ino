@@ -1,7 +1,7 @@
 
 /*******************************
   ╔╦╗╦ ╦╔═╗╦═╗╔═╗╔╦╗╦╔╗╔
-   ║ ╠═╣║╣ ╠╦╝║╣ ║║║║║║║ V2
+   ║ ╠═╣║╣ ╠╦╝║╣ ║║║║║║║ 
    ╩ ╩ ╩╚═╝╩╚═╚═╝╩ ╩╩╝╚╝
   Experiemental instrument that uses light as
   an interface to output tones & melodies.
@@ -9,7 +9,6 @@
   dialog between two.
 *******************************/
 
-#include <SoftwareWire.h>
 #include "ISL29125_SoftWire.h"
 #include "SFE_ISL29125.h"
 #include "head.h"
@@ -24,7 +23,5 @@ void loop() {
   light();
   fetchPhoto();
   fetchColor();
-  
-  Serial.println(photoValue);
   music(speaker1, colorAvg);
 }
