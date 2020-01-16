@@ -58,3 +58,9 @@ void loop() {
   analogWrite(ledPin, sensorValue);
 }
 ```
+
+### Redoing the circuit diagram
+
+I figured that the fritzing diagram I made was not actually a schematic. Since I had to redo this, I took the challenge to make it in Eagle, the program with one of the scariest interfaces I have ever seen (or lack thereof). Getting all of my sensors onto a single diagram proved to be quite difficult, as I quickly ran out of space for my nets.
+
+![Schematic](schematic.png)
