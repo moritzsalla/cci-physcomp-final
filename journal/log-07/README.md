@@ -20,3 +20,13 @@ void light () {
       analogWrite(ledA1, LEDval);
 }
 ```
+
+![](image-1.png)
+
+In order to have the two run asynchonously, one has to run on an offset. This can be easily achieved by using a sine curve on one, and a cosine curve on another value.
+
+```c++
+LEDval = 128 + 128 * sin(2 * PI / frequency * (millis()));
+
+LEDval2 = 128 + 128 * cos(2 * PI / frequency * (millis()));
+```

@@ -1,3 +1,4 @@
+#pragma once
 
 ISL29125_SOFT RGB_sensor_1;
 ISL29125_SOFT RGB_sensor_2;

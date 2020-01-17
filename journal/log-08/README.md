@@ -16,10 +16,6 @@ https://youtu.be/a39MprkitpA
 
 When the frequency drops below a certain value, the loudspeakers will start to play random pitches until the value of zero. Don't quite understand why this is happening. I have mapped the value so that these frequencies are omitted.
 
-#### Distance sensor
-
-In order to create a threshold in which the instrument turns on, I used the photoresistor readings. If the value goes above a cetrain amount, a tone will be played, whereas it will be stopped should the value drop. I have basically created a distance sensor from photoresistors.
-
 #### Finding a better material for the enclosure
 
 Went to another art supply shop. Silicone/latex seems the way to go. He only had the brown one though, albeit selling pigments. Pigments wont work because they likely make the material opaque. I need it semi translucent. Need to order this stuff on the internet. I ended up using a mixture of latex thickener and white color to create the desired effect.
