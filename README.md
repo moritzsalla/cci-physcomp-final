@@ -9,6 +9,8 @@ Experiemental instrument that uses light as an interface to output tones & melod
 1. SoftWire
 2. ISL29125 SoftWire
 
+## Folder Structure
+
 ```
 .
 ├── README.md
